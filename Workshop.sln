@@ -7,6 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Workshop.WebApp", "Workshop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Workshop.WebApp.Tests", "Workshop.WebApp.Tests\Workshop.WebApp.Tests.csproj", "{980840DC-DDB4-4832-B5D8-DA442D6F1E1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.Data", "Workshop.Data\Workshop.Data.csproj", "{007166C8-DF1E-4C42-A7D0-AA995F9F5C8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{A47D6DB0-DBCE-44D9-A64B-FD4CB401BBF8}"
+	ProjectSection(SolutionItems) = preProject
+		setup-sql-server-docker.cmd = setup-sql-server-docker.cmd
+		create-workshop-database.sql = create-workshop-database.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,10 @@ Global
 		{980840DC-DDB4-4832-B5D8-DA442D6F1E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{980840DC-DDB4-4832-B5D8-DA442D6F1E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{980840DC-DDB4-4832-B5D8-DA442D6F1E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007166C8-DF1E-4C42-A7D0-AA995F9F5C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007166C8-DF1E-4C42-A7D0-AA995F9F5C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007166C8-DF1E-4C42-A7D0-AA995F9F5C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007166C8-DF1E-4C42-A7D0-AA995F9F5C8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
