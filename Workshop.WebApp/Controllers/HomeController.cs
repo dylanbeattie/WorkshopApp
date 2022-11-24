@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Workshop.WebApp.Models;
 
-namespace Workshop.WebApp.Controllers; 
+namespace Workshop.WebApp.Controllers;
 
 public class HomeController : Controller {
     private readonly ILogger<HomeController> _logger;

@@ -1,4 +1,4 @@
-namespace Workshop.WebApp.Models; 
+namespace Workshop.WebApp.Models;
 
 public class ErrorViewModel {
     public string? RequestId { get; set; }

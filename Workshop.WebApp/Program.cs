@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Workshop.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+var sqlConnectionString = builder.Configuration.GetConnectionString("Workshop");
+builder.Services.AddDbContext<WorkshopDbContext>(options => options.UseSqlServer(sqlConnectionString));
 
 var app = builder.Build();
 
